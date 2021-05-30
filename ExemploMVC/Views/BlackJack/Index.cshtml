@@ -13,21 +13,48 @@
     .pontuacao{
         font-size: 2rem;
     }
+    .center{
+        text-align: center;
+    }
+    .btnreiniciar {
+        margin: 0 0 0 30%;
+    }
+    .btnjogar{
+        margin: 0 32% 0 0;
+    }
+    .btnjogar2 {
+        margin: 0 22% 0 0;
+    }
+    .partida {
+        margin: 0 0 0 30%;
+    }
+    .titulo{
+        margin-right: 5%;
+    }
+    .carta2 {
+        margin-left: 10%;
+    }
+    .jogador{
+        margin-left: 18%
+    }
+    .jogador2 {
+        margin-left: 28%
+    }
 </style>
-<h1>Jogo BlackJack</h1>
+<h1 class="center titulo">Jogo BlackJack</h1>
 <br />
 <br />
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">
-            <h3>
+            <h3 class="jogador">
                 Jogador 1
             </h3>
             <br /><br />
             <img alt="carta1" src="/images/0.png" height="350" width="250" name="cartas1" id="cartas1">
             <br /><br />
-            <button type="button" class="btn btn-success" name="btn_jogador_1" id="btn_jogador_1" onclick="jogador1()">
+            <button type="button" class="btn btn-success btnjogar" name="btn_jogador_1" id="btn_jogador_1" onclick="jogador1()">
                 Jogar
             </button>
             <button type="button" class="btn btn-success" name="btn_parar_1" id="btn_parar_1" onclick="parar1()">
@@ -35,12 +62,11 @@
             </button>
         </div>
         <div class="col-md-4">
-            <h3>
+            <h3 class="partida">
                 Partida
             </h3>
             <br /><br />
-         
-            <button type="button" class="btn btn-success" name="btn_reiniciar" id="btn_reiniciar" onclick="reiniciar()">
+            <button type="button" class="btn btn-success btnreiniciar" name="btn_reiniciar" id="btn_reiniciar" onclick="reiniciar()">
                 Reiniciar
             </button>
             <br /><br />
@@ -58,16 +84,16 @@
         </div>
         <div class="col-md-4">
 
-            <h3>
+            <h3 class="carta2 jogador2">
                 Jogador 2
             </h3>
             <br /><br />
-            <img alt="carta2" src="/images/0.png" height="350" width="250" name="cartas2" id="cartas2">
+            <img alt="carta2" class="carta2" src="/images/0.png" height="350" width="250" name="cartas2" id="cartas2">
             <br /><br />
-            <button type="button" disabled class="btn btn-success" name="btn_jogador_2" id="btn_jogador_2" onclick="jogador2()">
+            <button type="button" disabled class="btn btn-success btnjogar2 carta2" name="btn_jogador_2" id="btn_jogador_2" onclick="jogador2()">
                 Jogar
             </button>
-            <button type="button" disabled class="btn btn-success" name="btn_parar_2" id="btn_parar_2" onclick="parar2()">
+            <button type="button" disabled class="btn btn-success carta2" name="btn_parar_2" id="btn_parar_2" onclick="parar2()">
                 Parar
             </button>
 

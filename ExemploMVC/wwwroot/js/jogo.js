@@ -40,11 +40,9 @@ function verificarPontuacao(valor, jogador) {
     const jogador2 = document.querySelector('.pontuacaoJogador2')
     if (valor >= 21) {
         document.getElementById(`btn_parar_${jogador}`).click()
-        document.querySelector(`.pontuacaoJogador${jogador}`).style.color = "red"
 
     } else if (valor === 21) {
         document.getElementById(`btn_parar_${jogador}`).click()
-        document.querySelector(`.pontuacaoJogador${jogador}`).style.color = "green"
     }
 }
 
@@ -60,8 +58,8 @@ function verificarGanhador() {
         alert("Jogador 2 GANHOU!")
     } else
     if (jogador1 <= 21 && jogador2 <= 21) {
-        document.querySelector(`.pontuacaoJogador1`).style.color = "red"
-        document.querySelector(`.pontuacaoJogador2`).style.color = "red"
+        document.querySelector(`.pontuacaoJogador1`).style.color = "yellow"
+        document.querySelector(`.pontuacaoJogador2`).style.color = "yellow"
         alert("EMPATOU")
     } else
     if (jogador1 > 21 && jogador2 <= 21) {
@@ -72,6 +70,8 @@ function verificarGanhador() {
         document.querySelector(`.pontuacaoJogador1`).style.color = "green"
         alert("Jogador 1 GANHOU!")
     } else if (jogador1 > 21 && jogador2 > 21) {
+        document.querySelector(`.pontuacaoJogador1`).style.color = "red"
+        document.querySelector(`.pontuacaoJogador2`).style.color = "red"
         alert("SEM VENCEDOR!!")
     }
 

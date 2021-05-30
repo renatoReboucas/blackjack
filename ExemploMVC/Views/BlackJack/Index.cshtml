@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "BlackJack";
+}
+<style>
+    
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-color: #2c3e50;
+        color: #FFF;
+        
+    }
+    .pontuacao{
+        font-size: 2rem;
+    }
+</style>
+<h1>Jogo BlackJack</h1>
+<br />
+<br />
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>
+                Jogador 1
+            </h3>
+            <br /><br />
+            <img alt="carta1" src="/images/0.png" height="350" width="250" name="cartas1" id="cartas1">
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_jogador_1" id="btn_jogador_1" onclick="jogador1()">
+                Jogar
+            </button>
+            <button type="button" class="btn btn-success" name="btn_parar_1" id="btn_parar_1" onclick="parar1()">
+                Parar
+            </button>
+        </div>
+        <div class="col-md-4">
+            <h3>
+                Partida
+            </h3>
+            <br /><br />
+         
+            <button type="button" class="btn btn-success" name="btn_reiniciar" id="btn_reiniciar" onclick="reiniciar()">
+                Reiniciar
+            </button>
+            <br /><br />
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="badge badge-default pontuacao pontuacaoJogador1" id="jogador1">0</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default pontuacao">X</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default pontuacao pontuacaoJogador2" id="jogador2">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <h3>
+                Jogador 2
+            </h3>
+            <br /><br />
+            <img alt="carta2" src="/images/0.png" height="350" width="250" name="cartas2" id="cartas2">
+            <br /><br />
+            <button type="button" disabled class="btn btn-success" name="btn_jogador_2" id="btn_jogador_2" onclick="jogador2()">
+                Jogar
+            </button>
+            <button type="button" disabled class="btn btn-success" name="btn_parar_2" id="btn_parar_2" onclick="parar2()">
+                Parar
+            </button>
+
+        </div>
+    </div>
+</div>
